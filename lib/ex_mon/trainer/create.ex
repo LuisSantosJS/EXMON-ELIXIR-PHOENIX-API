@@ -9,4 +9,6 @@ defmodule ExMon.Trainer.Create do
 
   defp create_trainer({:ok, struct}), do: Repo.insert(struct)
   defp create_trainer({:error, __changeset} = error), do: error
+
+
 end
